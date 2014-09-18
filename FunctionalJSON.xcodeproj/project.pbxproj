@@ -11,8 +11,8 @@
 		EA1E4BAC199291E900A8BAF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E4BAB199291E900A8BAF5 /* ViewController.swift */; };
 		EA1E4BAF199291E900A8BAF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA1E4BAD199291E900A8BAF5 /* Main.storyboard */; };
 		EA1E4BB1199291E900A8BAF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA1E4BB0199291E900A8BAF5 /* Images.xcassets */; };
-		EA1E4BBD199291E900A8BAF5 /* FunctionalJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E4BBC199291E900A8BAF5 /* FunctionalJSONTests.swift */; };
 		EA1E4BC5199291FF00A8BAF5 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1E4BC4199291FF00A8BAF5 /* Functional.swift */; };
+		EA41A5AA19C9FE63001912F2 /* UserDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA41A5A919C9FE63001912F2 /* UserDecodingTests.swift */; };
 		EA94BC7B199C027F00932DF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94BC7A199C027F00932DF0 /* User.swift */; };
 		EA94BC7D199C02B200932DF0 /* UserExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94BC7C199C02B200932DF0 /* UserExtension.swift */; };
 		EA94BC7F199C02C000932DF0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94BC7E199C02C000932DF0 /* JSON.swift */; };
@@ -41,8 +41,8 @@
 		EA1E4BB0199291E900A8BAF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA1E4BB6199291E900A8BAF5 /* FunctionalJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunctionalJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1E4BBB199291E900A8BAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA1E4BBC199291E900A8BAF5 /* FunctionalJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalJSONTests.swift; sourceTree = "<group>"; };
 		EA1E4BC4199291FF00A8BAF5 /* Functional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		EA41A5A919C9FE63001912F2 /* UserDecodingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDecodingTests.swift; sourceTree = "<group>"; };
 		EA94BC7A199C027F00932DF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EA94BC7C199C02B200932DF0 /* UserExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserExtension.swift; sourceTree = "<group>"; };
 		EA94BC7E199C02C000932DF0 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		EA1E4BB9199291E900A8BAF5 /* FunctionalJSONTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA1E4BBC199291E900A8BAF5 /* FunctionalJSONTests.swift */,
+				EA41A5A919C9FE63001912F2 /* UserDecodingTests.swift */,
 				EA1E4BBA199291E900A8BAF5 /* Supporting Files */,
 			);
 			path = FunctionalJSONTests;
@@ -248,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA1E4BBD199291E900A8BAF5 /* FunctionalJSONTests.swift in Sources */,
+				EA41A5AA19C9FE63001912F2 /* UserDecodingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,19 +1,11 @@
 import Foundation
 
-typealias JSON = AnyObject
-typealias JSONDictionary = Dictionary<String, AnyObject>
-typealias JSONArray = Array<AnyObject>
+public typealias JSON = AnyObject
+public typealias JSONObject = [String:AnyObject]
+public typealias JSONArray = [AnyObject]
 
-func _JSONString(object: JSON) -> String? {
-    return object as? String
-}
-
-func _JSONInt(object: JSON) -> Int? {
-    return object as? Int
-}
-
-func _JSONObject(object: JSON) -> JSONDictionary? {
-    return object as? JSONDictionary
+func _JSONParse<A>(object: JSON) -> A? {
+  return object as? A
 }
 
 func decodeJSON(data: NSData) -> Result<JSON> {

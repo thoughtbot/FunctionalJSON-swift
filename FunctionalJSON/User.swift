@@ -1,5 +1,5 @@
-struct User {
-    let id: Int
-    let name: String
-    let email: String
+public struct User {
+    public let id: Int
+    public let name: String
+    public let email: String?
 }

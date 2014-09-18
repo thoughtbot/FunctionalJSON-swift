@@ -2,6 +2,9 @@ infix operator >>> { associativity left precedence 150 } // bind
 infix operator <^> { associativity left } // Functor's fmap (usually <$>)
 infix operator <*> { associativity left } // Applicative's apply
 
+infix operator <|  { associativity left precedence 150 }
+infix operator <|* { associativity left precedence 150 }
+
 func >>><A, B>(a: A?, f: A -> B?) -> B? {
     if let x = a {
         return f(x)
@@ -32,4 +35,16 @@ func <*><A, B>(f: (A -> B)?, a: A?) -> B? {
         }
     }
     return .None
+}
+
+func pure<A>(a: A) -> A? {
+  return .Some(a)
+}
+
+func <|<A>(object: JSONObject, key: String) -> A? {
+  return object[key] >>> _JSONParse
+}
+
+func <|*<A>(object: JSONObject, key: String) -> A?? {
+  return pure(object[key] >>> _JSONParse)
 }
